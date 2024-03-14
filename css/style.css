@@ -1,0 +1,561 @@
+
+
+/* Reset some basic elements */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Body styles */
+body {
+  background-color: #fff;
+  font-family: "Poppins";
+
+}
+
+/* Set a default behaviour for all elements with box-sizing border-box */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Basic button styling */
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Utility classes for margin and padding */
+.mt-1 {
+  margin-top: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.pt-1 {
+  padding-top: 1rem;
+}
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+/* Flexbox utilities */
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Text utilities */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.font-weight-bold {
+  font-weight: bold;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+  .responsive-text {
+    font-size: 12px;
+  }
+}
+
+
+
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.login-container {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login-form {
+  width: 50%;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.login-form .container-login {
+  width: 365px;
+  text-align: center;
+}
+.login-form .title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  color: rgba(0, 0, 0, 1);
+}
+.login-form .description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(82, 82, 82, 1);
+  text-align: center;
+}
+.login-banner {
+  width: 50%;
+  background: -o-linear-gradient(232.36deg, #9181f4 -5.84%, #5038ed 106.73%);
+  background: linear-gradient(217.64deg, #9181f4 -5.84%, #5038ed 106.73%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-banner-content {
+  position: relative;
+  width: 412px;
+  height: 524px;
+  padding: 20px;
+  color: white;
+  background: -o-linear-gradient(232.36deg, #9181f4 -5.84%, #5038ed 106.73%);
+  background: linear-gradient(217.64deg, #9181f4 -5.84%, #5038ed 106.73%);
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  border-radius: 46px;
+  -webkit-border-radius: 46px;
+  -moz-border-radius: 46px;
+  -ms-border-radius: 46px;
+  -o-border-radius: 46px;
+}
+.login-banner-content .avatar {
+  position: absolute;
+  bottom: 0;
+  right: -100px;
+  max-width: unset;
+}
+.login-banner-content .thunderbolt-icon {
+  position: absolute;
+  bottom: 80px;
+  left: -39.5px;
+}
+.login-banner-content h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  max-width: 180px;
+}
+#username,
+#password {
+  width: 100%;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 12px;
+  padding: 15px;
+  height: 52px;
+  margin: 10px 0;
+  display: inline-block;
+  border: none;
+  background: rgba(240, 237, 255, 0.8);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  color: rgba(28, 28, 28, 1);
+}
+#username {
+  background-repeat: no-repeat;
+  background-image: url("../images/user.png");
+  background-position: 14px 14px;
+  padding-left: 45px;
+}
+
+#password {
+  background-image: url("../images/password.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  padding-left: 45px;
+}
+
+button {
+  background: -o-linear-gradient(350.22deg, #9181f4 -5.85%, #5038ed 109.55%);
+  background: linear-gradient(99.78deg, #9181f4 -5.85%, #5038ed 109.55%);
+  color: #fff;
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 12px;
+  padding: 14px 30px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  max-width: 124px;
+  height: 52px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  -webkit-box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.16);
+  margin-bottom: 20px;
+}
+.title-login-line p {
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  color: rgba(82, 82, 82, 1);
+}
+
+.title-login-line p::before,
+.title-login-line p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 30%;
+  background: rgba(240, 237, 255, 1);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.title-login-line p::before {
+  left: 0;
+}
+
+.title-login-line p::after {
+  right: 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.title-login::before,
+.title-login::after {
+  width: 364px;
+  border: 1px solid rgba(240, 237, 255, 1);
+}
+.social-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.social-button img {
+  margin-right: 5px;
+}
+.social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 3px;
+  height: 52px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(240, 237, 255, 1);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    width: 100%;     
+  }
+
+  .login-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .login-form .container-login,
+  .login-banner-content {
+    width: 90%; 
+    margin: 0 auto; 
+  }
+
+  .login-banner {
+    width: 100%;    padding: 20px 20px 0 20px;
+
+  }
+
+  .title-login-line p {
+    font-size: 14px;
+  }
+
+  .title-login-line p::before,
+  .title-login-line p::after {
+    width: 20%; 
+  }
+
+  .login-form .title {
+    font-size: 24px; 
+  }
+
+  .login-form .description {
+    font-size: 14px; 
+  }
+
+  .social-button {
+    margin-top: 10px; 
+  }
+
+  .social-button img {
+    width: 20px; 
+  }
+  .login-banner-content .avatar {
+  
+    max-width: 670px;
+}
+.login-banner-content .thunderbolt-icon{
+    display: none;
+}
+  #username,
+  #password {
+    margin: 5px 0; 
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-bottom: 10px; 
+  }
+}

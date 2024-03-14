@@ -1,0 +1,70 @@
+/* Add to the top of your CSS file to set the direction */
+html {
+  direction: rtl;
+}
+
+/* Flip left and right margins and paddings */
+/* Example for input fields */
+#username,
+#password {
+  padding-right: 45px; /* Changed from padding-left */
+  padding-left: 15px; /* Adjust as necessary */
+  /* ... rest of the styles */
+}
+
+/* Update text alignment */
+.login-form .title,
+.login-form .description,
+.title-login-line p {
+  text-align: center;
+}
+
+/* Flip the before and after pseudo-elements */
+.title-login-line p::before {
+  right: 0; /* Changed from left: 0; */
+  left: auto; /* Ensures that the left position is not considered */
+}
+
+.title-login-line p::after {
+  left: 0; /* Changed from right: 0; */
+  right: auto; /* Ensures that the right position is not considered */
+}
+
+/* Adjust alignments for RTL in the social-buttons */
+.social-buttons {
+  justify-content: space-around;
+  align-items: flex-end; /* Align items to the right */
+}
+
+/* Make sure icons and texts are aligned properly in RTL */
+.social-button {
+  text-align: right;
+}
+.social-button img {
+  margin-right: 0;
+  margin-left: 5px;
+}
+/* Additional RTL adjustments as needed */
+/* ... */
+button {
+  padding: 15px 20px;    max-width: 160px;
+
+}
+
+.login-banner-content .avatar {
+  left: -120px;
+  right: unset;
+}
+
+.login-banner-content .thunderbolt-icon {
+  right: -39.5px;
+  left: unset;
+}
+
+@media (max-width: 768px) {
+  .login-banner-content .avatar {
+    max-width: 570px;
+    left: -38px;
+    right: unset;
+  }
+}
